@@ -6,5 +6,10 @@ env:
   matrix:
     - TARGET=ubuntu-12.04-x64
     - TARGET=ubuntu-12.04-x86
+before_install:
+  # Pins the version of the java package installed on the Travis VMs
+  # and avoids a lengthy upgrade process for them.
+  - sudo apt-mark hold oracle-java7-installer oracle-java8-installer
+  - sudo apt-get update -qq
 script:
   - sh "${CI_ROOT}/${TARGET}.sh"
