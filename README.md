@@ -1,5 +1,5 @@
 ![libuv][libuv_banner]
-[![Build Status](https://travis-ci.org/joyent/libuv.svg?branch=master)](https://travis-ci.org/joyent/libuv)
+[![Build Status](https://travis-ci.org/tarruda/libuv.svg?branch=tci)](https://travis-ci.org/tarruda/libuv)
 
 ## Overview
 
