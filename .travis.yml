@@ -6,6 +6,7 @@ env:
   matrix:
     - TARGET=ubuntu-12.04-x64
     - TARGET=ubuntu-12.04-x86
+    - TARGET=mingw-wine-x64
 before_install:
   # Pins the version of the java package installed on the Travis VMs
   # and avoids a lengthy upgrade process for them.
