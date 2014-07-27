@@ -54,7 +54,9 @@ TEST_DECLARE   (tcp_ping_pong_v6)
 TEST_DECLARE   (pipe_ping_pong)
 TEST_DECLARE   (delayed_accept)
 TEST_DECLARE   (multiple_listen)
+#ifndef DISABLE_NONDETERMINISTIC_TESTS
 TEST_DECLARE   (tcp_writealot)
+#endif
 TEST_DECLARE   (tcp_try_write)
 TEST_DECLARE   (tcp_write_queue_order)
 TEST_DECLARE   (tcp_open)
@@ -328,8 +330,10 @@ TASK_LIST_START
   TEST_ENTRY  (delayed_accept)
   TEST_ENTRY  (multiple_listen)
 
+#ifndef DISABLE_NONDETERMINISTIC_TESTS
   TEST_ENTRY  (tcp_writealot)
   TEST_HELPER (tcp_writealot, tcp4_echo_server)
+#endif
 
   TEST_ENTRY  (tcp_try_write)
 
