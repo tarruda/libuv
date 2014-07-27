@@ -5,5 +5,6 @@ env:
     - CI_ROOT="$PROJECT_ROOT/.ci"
   matrix:
     - PLATFORM=ubuntu-12.04-x64
+    - PLATFORM=ubuntu-12.04-x86
 script:
   - sh "$CI_ROOT/$PLATFORM.sh"
