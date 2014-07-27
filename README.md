@@ -1,4 +1,5 @@
 ![libuv][libuv_banner]
+[![Build Status](https://travis-ci.org/tarruda/libuv.svg?branch=travis-ci)](https://travis-ci.org/tarruda/libuv)
 
 ## Overview
 

@@ -1,0 +1,9 @@
+language: c
+env:
+  global:
+    - PROJECT_ROOT="$(pwd)"
+    - CI_ROOT="$PROJECT_ROOT/.ci"
+  matrix:
+    - PLATFORM=ubuntu-12.04-x64
+script:
+  - sh "$CI_ROOT/$PLATFORM.sh"
